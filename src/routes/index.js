@@ -1,11 +1,8 @@
-import { Router } from 'express';
+import { Router } from "express";
+import { fetchData } from "../controllers/dataController.js";
 
 const router = Router();
 
-router.get('/', (req, res) => {
-  req.log.info('/ request recieved');
-
-  res.send('Hello World!');
-});
+router.get("/enedis-data", fetchData);
 
 export default router;
