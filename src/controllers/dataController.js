@@ -1,6 +1,7 @@
-import { getEnedisData } from "../services/enedisService.js";
+import { getEnedisData } from "../../services/enedisServices.js";
 
-const fetchData = async (req, res) => {
+///TODO
+export const fetchData = async (req, res) => {
   try {
     const data = await getEnedisData();
     console.log(data); // This line will print the fetched data to the console

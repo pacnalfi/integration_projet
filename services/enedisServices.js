@@ -1,5 +1,6 @@
 import fetch from "node-fetch";
 
+
 // Assuming you need to prepend a base URL to the endpoint
 const BASE_URL = "https://data.enedis.fr";
 const API_ENDPOINT = "/api/explore/v2.1/catalog/datasets/bilan-electrique-transpose/records?limit=20";
@@ -11,7 +12,6 @@ const getEnedisData = async () => {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        // 'Authorization': 'Bearer YOUR_API_KEY', // Uncomment and replace if API key is needed
       },
     });
 
